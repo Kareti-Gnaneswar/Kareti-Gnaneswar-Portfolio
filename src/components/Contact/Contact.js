@@ -1,4 +1,3 @@
-// src/components/Contact/Contact.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
@@ -20,11 +19,22 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Define all user data to be sent in the email
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      mobile: formData.mobile,
+      linkedin: formData.linkedin,
+      github: formData.github,
+      message: formData.message
+    };
+
     // Use EmailJS to send the email
-    emailjs.send('service_sauoki5', 'template_qpdjdvw', formData, 'b2YxlKYFf87OpxWD6')
+    emailjs.send('service_sauoki5', 'template_qpdjdvw', templateParams, 'b2YxlKYFf87OpxWD6')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Message sent!');
+        // Reset the form after submission
         setFormData({ name: '', email: '', mobile: '', linkedin: '', github: '', message: '' });
       }, (err) => {
         console.error('Failed to send message:', err);
