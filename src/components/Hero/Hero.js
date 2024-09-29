@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
-        <h2>Hello, I'm a Data Analyst</h2>
-        <p>Specializing in data visualization and analysis, with experience in developing mobile applications.</p>
+        <h2>Hello, I'm a Machine Learning Engineer</h2>
+        <p>Specializing in machine learning algorithms and data-driven solutions, with experience in developing predictive models.</p>
         <Link 
           to="projects" 
           smooth={true} 
