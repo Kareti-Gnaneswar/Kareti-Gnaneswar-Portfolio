@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar">
-        <h1 className="logo">YourName</h1>
+        <h1 className="logo">Kareti Gnaneswar</h1>
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li>
             <Link 
