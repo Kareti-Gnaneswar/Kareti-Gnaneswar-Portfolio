@@ -1,0 +1,93 @@
+/* src/components/Hero/Hero.css */
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position for the background */
+    overflow: hidden; /* Hide overflow for the background lines */
+    text-align: center; /* Center text for all screen sizes */
+    background: linear-gradient(135deg, rgba(255, 104, 0, 0.8), rgba(0, 123, 255, 0.8)); /* Background gradient */
+}
+
+.hero-content {
+    color: #fff;
+    max-width: 800px;
+    padding: 20px; /* Add padding for better spacing */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem; /* Use rem for better scaling */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Use rem for better scaling */
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #21a1f1;
+}
+
+/* Image styles */
+.hero-image-container {
+    margin-top: 30px; /* Space between text and image */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.hero-image {
+    width: 250px; /* Increased size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Enhanced drop shadow */
+    animation: fadeIn 1s ease-in, bounce 1s infinite alternate; /* Animation effect */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide in from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Bounce effect */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 200px; /* Adjust image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        width: 150px; /* Adjust image size for mobile */
+    }
+}

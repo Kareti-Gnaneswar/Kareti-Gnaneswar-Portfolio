@@ -1,0 +1,92 @@
+/* src/components/Contact/Contact.css */
+.contact-section {
+    background-color: #f9f9f9; /* Light background for better brightness */
+    color: #333; /* Dark text for readability */
+    padding: 50px 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; /* Increase font size */
+  }
+  
+  .contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em; /* Slightly larger font for the message */
+    color: #555; /* Darker shade for the paragraph */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Input background */
+    color: #333; /* Input text color */
+    transition: border-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Make inputs full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff; /* Highlight color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .btn {
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 30px 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .contact-section h2 {
+      font-size: 1.8em; /* Adjust heading size */
+    }
+  
+    .contact-section p {
+      font-size: 1em; /* Adjust paragraph size */
+    }
+  
+    .contact-form {
+      gap: 10px; /* Reduce gap on smaller screens */
+    }
+  }
+  

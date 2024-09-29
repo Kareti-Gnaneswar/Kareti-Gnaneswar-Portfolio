@@ -1,0 +1,6 @@
+/* src/App.css */
+
+/* Apply smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}

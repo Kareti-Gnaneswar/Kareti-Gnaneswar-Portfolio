@@ -1,0 +1,30 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+    background-color: #282c34; /* Dark background for the footer */
+    color: #fff; /* White text color for contrast */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center; /* Center the text */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Margin below the paragraph */
+}
+
+.social-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the social links */
+    margin-top: 10px; /* Margin above the social links */
+}
+
+.social-links a {
+    margin: 0 15px; /* Space between icons */
+    color: inherit; /* Inherit text color for icons */
+    font-size: 24px; /* Set the icon size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for icons */
+.social-links a:hover {
+    color: #61dafb; /* Change color on hover (light blue for better visibility) */
+}

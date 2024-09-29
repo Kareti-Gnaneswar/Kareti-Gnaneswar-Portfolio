@@ -1,0 +1,65 @@
+/* src/components/Skills/Skills.css */
+
+.skills-section {
+    padding: 50px 20px; /* Add padding for spacing */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center all content */
+}
+
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Full width */
+}
+
+.skill-item {
+    width: 80%; /* Adjust the width as needed */
+    margin: 15px 0; /* Space between items */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+    background-color: #ffffff; /* White background for each skill */
+    border: 1px solid #ddd; /* Light border for each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.skill-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.skill-icon {
+    width: 30px; /* Icon size */
+    height: 30px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.skill-name {
+    flex-grow: 1; /* Allow text to take remaining space */
+    text-align: left; /* Align text to the left */
+    font-size: 1.2rem; /* Font size for skill name */
+    color: #333; /* Dark text color */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Background color for the progress bar */
+    border-radius: 5px; /* Rounded corners for the bar */
+    height: 10px; /* Height of the progress bar */
+    margin: 0 10px; /* Space around the progress bar */
+    flex-basis: 100px; /* Fixed width for the progress bar */
+    overflow: hidden; /* Hide overflow */
+}
+
+.progress-fill {
+    background-color: #61dafb; /* Color for filled portion of the progress bar */
+    height: 100%; /* Fill height */
+    transition: width 0.3s ease; /* Smooth transition for filling */
+}
+
+.rating-score {
+    font-size: 0.9rem; /* Font size for the rating score */
+    color: #333; /* Dark text color */
+}

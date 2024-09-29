@@ -1,0 +1,45 @@
+/* src/components/About/About.css */
+
+.about-section {
+    padding: 50px 20px; /* Add padding for spacing */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.about-content {
+    max-width: 800px; /* Limit content width for readability */
+    margin: 0 auto; /* Center the content */
+    text-align: left; /* Align text to the left */
+    color: #333; /* Dark text color for contrast */
+}
+
+.about-content h2 {
+    font-size: 2.5rem; /* Size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #282c34; /* Darker color for the heading */
+}
+
+.about-content p {
+    font-size: 1.2rem; /* Size for paragraphs */
+    margin-bottom: 15px; /* Space between paragraphs */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Highlight styles for key terms */
+.highlight {
+    font-weight: bold; /* Make text bold */
+    color: #21a1f1; /* Change text color to highlight */
+    background-color: #e0f7fa; /* Light background color for highlight */
+    padding: 2px 5px; /* Add padding around highlighted text */
+    border-radius: 4px; /* Rounded corners for better appearance */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Smaller paragraph size on mobile */
+    }
+}
